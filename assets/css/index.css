@@ -2,12 +2,15 @@
   --bg: #ffffff;
   --font-color: #121314;
   --link-bg: rgba(79, 192, 141);
+  /* color | offset-x | offset-y | blur-radius */
+  --text-shadow: #aaaaaa 1px 0px 5px;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #000000;
     --font-color: #e4e9ee;
     --link-bg: rgba(79, 192, 141);
+    --text-shadow: #aaaaaa 1px 0px 5px;
   }
 }
 @media (prefers-color-scheme: light) {
@@ -15,6 +18,7 @@
     --bg: #ffffff;
     --font-color: #121314;
     --link-bg: rgba(79, 192, 141);
+    --text-shadow: #333333 1px 0px 5px;
   }
 }
 body {
@@ -34,17 +38,20 @@ h1 {
   margin-bottom: 0;
   font-size: 4.5em;
   font-weight: 500;
+  text-shadow: var(--text-shadow);
 }
 p {
   max-width: 28em;
   font-size: 1.6em;
   font-weight: 300;
   line-height: 1.4;
+  text-shadow: var(--text-shadow);
 }
 a {
   position: relative;
   color: var(--font-color);
   text-decoration: none;
+  text-shadow: var(--text-shadow);
 }
 a:after {
   content: '';

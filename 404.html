@@ -3,10 +3,18 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Zhixiang Yao</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- iOS Safari full screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Safari state bar style, default/black/black-translucent -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 360 browser speed mode -->
+    <meta name="renderer" content="webkit" />
     <link rel="stylesheet" href="./assets/css/font.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <script type="module" src="./assets/js/RaindropFX.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
+    <title>Zhixiang Yao</title>
   </head>
 
   <body>
@@ -24,36 +32,4 @@
     <p>If you happen to speak Chinese, my Chinese name is 姚志祥 (yáo zhì xiáng).</p>
     <p>Outside of programming and watch anime and read novels, I enjoy MOBA games(Dota2).</p>
   </body>
-
-  <script type="module" src="./assets/js/RaindropFX.js"></script>
-
-  <script type="module">
-    const canvas = document.querySelector('#canvas')
-    const rect = canvas.getBoundingClientRect()
-    canvas.width = rect.width
-    canvas.height = rect.height
-
-    /**
-     * @author SardineFish
-     *
-     * https://github.com/SardineFish/raindrop-fx
-     */
-    const { RaindropFX } = globalThis || window
-
-    const raindropFx = new RaindropFX({
-      canvas: canvas,
-      background: './assets/img/bg.jpg',
-      spawnSize: [30, 80],
-      spawnInterval: [0.1, 0.2],
-      mistBlurStep: 5,
-      dropletsPerSecond: 1000,
-    })
-
-    window.onresize = () => {
-      const rect = canvas.getBoundingClientRect()
-      raindropFx.resize(rect.width, rect.height)
-    }
-
-    raindropFx.start()
-  </script>
 </html>
