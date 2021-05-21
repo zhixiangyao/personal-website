@@ -11,8 +11,8 @@ canvas.height = rect.height
  */
 const { RaindropFX } = self
 
-const dark = '/assets/img/bg.jpg'
-const light = '/assets/img/sakura.png'
+const dark = '/assets/img/light.png'
+const light = '/assets/img/dark.png'
 
 const option = {
   canvas: canvas,
