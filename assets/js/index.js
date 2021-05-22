@@ -42,8 +42,6 @@ raindropFx.start()
 console.group('Inspired by Even You: https://evanyou.me')
 console.groupEnd()
 
-
 console.group('raindropFx author: SardineFish')
 console.group('GitHub: https://github.com/SardineFish/raindrop-fx')
 console.groupEnd()
-
