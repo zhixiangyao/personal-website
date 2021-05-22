@@ -38,3 +38,8 @@ self.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', async
 })
 
 raindropFx.start()
+
+console.log('Inspired by Even You: evanyou.me')
+console.log()
+console.log('raindropFx: github.com/SardineFish/raindrop-fx')
+console.log('raindropFx author: SardineFish')
