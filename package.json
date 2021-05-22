@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "yaozhixiang.top",
   "scripts": {
-    "zip": "zip -r ../html.zip ../personal-website"
+    "zip": "zip -r --exclude=*.git* --exclude=*.DS_Store* ../html.zip ."
   },
   "repository": {
     "type": "git",
