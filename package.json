@@ -7,12 +7,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xiaojun996/personal-website.git"
+    "url": "git+https://github.com/yao-zhixiang/personal-website.git"
   },
   "author": "yaozhixiang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/xiaojun996/personal-website/issues"
+    "url": "https://github.com/yao-zhixiang/personal-website/issues"
   },
-  "homepage": "https://github.com/xiaojun996/personal-website#readme"
+  "homepage": "https://github.com/yao-zhixiang/personal-website#readme"
 }

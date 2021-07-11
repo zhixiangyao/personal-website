@@ -15,19 +15,19 @@ const { RaindropFX } = self
 const { height, width } = body
 
 const darkDesktopImgList = [
-  'https://cdn.jsdelivr.net/gh/xiaojun996/CDN/images/anime/fate/751262.png',
-  'https://cdn.jsdelivr.net/gh/xiaojun996/CDN/images/anime/fate/917480.png',
-  'https://cdn.jsdelivr.net/gh/xiaojun996/CDN/images/anime/fate/999332.png',
+  'https://cdn.jsdelivr.net/gh/yao-zhixiang/CDN/images/anime/fate/751262.png',
+  'https://cdn.jsdelivr.net/gh/yao-zhixiang/CDN/images/anime/fate/917480.png',
+  'https://cdn.jsdelivr.net/gh/yao-zhixiang/CDN/images/anime/fate/999332.png',
 ]
 const lightDesktopImgList = [
-  'https://cdn.jsdelivr.net/gh/xiaojun996/CDN/images/anime/fate/843699.png',
-  'https://cdn.jsdelivr.net/gh/xiaojun996/CDN/images/anime/fate/862789.png',
+  'https://cdn.jsdelivr.net/gh/yao-zhixiang/CDN/images/anime/fate/843699.png',
+  'https://cdn.jsdelivr.net/gh/yao-zhixiang/CDN/images/anime/fate/862789.png',
 ]
 
-const darkImgList = ['https://cdn.jsdelivr.net/gh/xiaojun996/CDN/images/anime/twitter/3.jpeg']
+const darkImgList = ['https://cdn.jsdelivr.net/gh/yao-zhixiang/CDN/images/anime/twitter/3.jpeg']
 const lightImgList = [
-  'https://cdn.jsdelivr.net/gh/xiaojun996/CDN/images/anime/twitter/2.jpeg',
-  'https://cdn.jsdelivr.net/gh/xiaojun996/CDN/images/anime/twitter/1.jpeg',
+  'https://cdn.jsdelivr.net/gh/yao-zhixiang/CDN/images/anime/twitter/2.jpeg',
+  'https://cdn.jsdelivr.net/gh/yao-zhixiang/CDN/images/anime/twitter/1.jpeg',
 ]
 
 let dark = undefined
