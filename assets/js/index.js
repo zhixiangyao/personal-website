@@ -24,10 +24,10 @@ const lightDesktopImgList = [
   'https://yaozhixiang.top/assets/images/desktop/862789.png',
 ]
 
-const darkImgList = ['https://yaozhixiang.top/assets/images/desktop/mobile/3.jpeg']
+const darkImgList = ['https://yaozhixiang.top/assets/images/mobile/3.jpeg']
 const lightImgList = [
-  'https://yaozhixiang.top/assets/images/desktop/mobile/2.jpeg',
-  'https://yaozhixiang.top/assets/images/desktop/mobile/1.jpeg',
+  'https://yaozhixiang.top/assets/images/mobile/2.jpeg',
+  'https://yaozhixiang.top/assets/images/mobile/1.jpeg',
 ]
 
 let dark = undefined
