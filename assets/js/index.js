@@ -1,51 +1,52 @@
-const self = globalThis || window
-const canvas = document.querySelector('#canvas')
-const rect = canvas.getBoundingClientRect()
-const body = document.body.getBoundingClientRect()
-canvas.width = rect.width
-canvas.height = rect.height
-
 /**
  * @author SardineFish
- *
  * https://github.com/SardineFish/raindrop-fx
  */
-const { RaindropFX } = self
 
+const self = globalThis || window
+const canvas = document.querySelector('#canvas')
+const body = document.body.getBoundingClientRect()
+const rect = canvas.getBoundingClientRect()
+const generatorRandom = num => Math.floor(Math.random() * num)
+const { RaindropFX } = self
 const { height, width } = body
 
-const darkDesktopImgList = [
-  'https://yaozhixiang.top/assets/images/desktop/751262.png',
-  'https://yaozhixiang.top/assets/images/desktop/917480.png',
-  'https://yaozhixiang.top/assets/images/desktop/999332.png',
-]
 const lightDesktopImgList = [
-  'https://yaozhixiang.top/assets/images/desktop/843699.png',
-  'https://yaozhixiang.top/assets/images/desktop/862789.png',
+  'https://yaozhixiang.top/assets/images/desktop/1.png',
+  'https://yaozhixiang.top/assets/images/desktop/2.png',
 ]
-
-const darkImgList = ['https://yaozhixiang.top/assets/images/mobile/3.jpeg']
+const darkDesktopImgList = [
+  'https://yaozhixiang.top/assets/images/desktop/3.png',
+  'https://yaozhixiang.top/assets/images/desktop/4.png',
+  'https://yaozhixiang.top/assets/images/desktop/5.png',
+  'https://yaozhixiang.top/assets/images/desktop/6.png',
+  'https://yaozhixiang.top/assets/images/desktop/7.png',
+]
+const darkImgList = [
+  'https://yaozhixiang.top/assets/images/mobile/3.jpeg',
+  'https://yaozhixiang.top/assets/images/mobile/6.jpeg',
+  'https://yaozhixiang.top/assets/images/mobile/7.jpeg',
+]
 const lightImgList = [
   'https://yaozhixiang.top/assets/images/mobile/2.jpeg',
   'https://yaozhixiang.top/assets/images/mobile/1.jpeg',
+  'https://yaozhixiang.top/assets/images/mobile/4.jpeg',
+  'https://yaozhixiang.top/assets/images/mobile/5.jpeg',
 ]
 
 let dark = undefined
 let light = undefined
 
-const generatorRandom = num => {
-  return Math.floor(Math.random() * num)
-}
-
 if (height > width) {
-  // mobile
   dark = darkImgList[generatorRandom(darkImgList.length)]
   light = lightImgList[generatorRandom(lightImgList.length)]
 } else {
-  // desktop
   dark = darkDesktopImgList[generatorRandom(darkDesktopImgList.length)]
   light = lightDesktopImgList[generatorRandom(lightDesktopImgList.length)]
 }
+
+canvas.width = rect.width
+canvas.height = rect.height
 
 const option = {
   canvas: canvas,
