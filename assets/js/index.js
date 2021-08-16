@@ -19,8 +19,8 @@ const darkDesktopImgList = [
   'https://yaozhixiang.top/assets/images/desktop/3.png',
   'https://yaozhixiang.top/assets/images/desktop/4.png',
   'https://yaozhixiang.top/assets/images/desktop/5.png',
-  'https://yaozhixiang.top/assets/images/desktop/6.png',
-  'https://yaozhixiang.top/assets/images/desktop/7.png',
+  'https://yaozhixiang.top/assets/images/desktop/6.jpeg',
+  'https://yaozhixiang.top/assets/images/desktop/7.jpeg',
 ]
 const darkImgList = [
   'https://yaozhixiang.top/assets/images/mobile/3.jpeg',
