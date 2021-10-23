@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="no-touch">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="renderer" content="webkit" />
+    <meta name="description" content="yaozhixiang(姚志祥)" />
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <style>
+      :root {
+        --bg: #ffffff;
+        --font-color: #121314;
+        --link-bg: rgba(79, 192, 141);
+        --text-shadow: #aaaaaa 1px 0px 5px;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --font-color: #e4e9ee;
+          --link-bg: rgba(79, 192, 141);
+          --text-shadow: #aaaaaa 1px 0px 5px;
+        }
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #ffffff;
+          --font-color: #121314;
+          --link-bg: rgba(79, 192, 141);
+          --text-shadow: #333333 1px 0px 5px;
+        }
+      }
+      html {
+        width: 100%;
+        height: 100%;
+        font-size: calc(10px + 0.33vw);
+        font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+          'Open Sans', 'Helvetica Neue', sans-serif;
+        color: var(--font-color);
+        -webkit-font-smoothing: antialiased;
+      }
+      body {
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        padding: 5vh 10vw;
+        background-color: var(--bg);
+        overflow: hidden;
+      }
+      h1 {
+        text-align: center;
+      }
+      .go-back {
+        position: relative;
+        top: 0;
+        left: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: auto;
+        min-width: 0.375rem;
+        padding: 0 16px;
+        padding-inline-start: 1rem;
+        padding-inline-end: 1rem;
+        border-color: #e2e8f0;
+        border-radius: 0.375rem;
+        border-image: initial;
+        color: #ffffff;
+        background: #3182ce;
+        line-height: 1.2;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        user-select: none;
+        white-space: nowrap;
+        vertical-align: middle;
+        outline: transparent solid 2px;
+        outline-offset: 2px;
+        overflow: visible;
+        overflow-wrap: break-word;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        text-rendering: auto;
+        letter-spacing: normal;
+        word-spacing: normal;
+        transform: translateX(-50%);
+
+        appearance: none;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+        transition-duration: 200ms;
+        border-width: 0px;
+        border-style: solid;
+      }
+      .go-back:hover {
+        background: #2b6cb0;
+      }
+    </style>
+    <title>Zhixiang Yao</title>
+  </head>
+
+  <body>
+    <h1>404 Not Found</h1>
+    <button type="button" class="go-back">Go back!</button>
+    <script>
+      const EleButton = document.querySelector('.go-back')
+      EleButton.addEventListener('click', () => {
+        history.go(-1)
+      })
+    </script>
+  </body>
+</html>
