@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="yaozhixiang" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <link
+      href="https://github.com/zhixiangyao/CDN/blob/master/images/profile/06.github-1.jpeg?raw=true"
+      rel="apple-touch-icon-precomposed"
+    />
     <meta name="renderer" content="webkit" />
     <meta property="og:title" content="Zhixiang Yao" />
     <meta property="og:type" content="website" />
@@ -23,14 +29,14 @@
       :root {
         --bg: #ffffff;
         --font-color: #121314;
-        --link-bg: rgb(245, 33, 33);
+        --link-bg: rgba(79, 192, 141);
         --text-shadow: #aaaaaa 1px 0px 5px;
       }
       @media (prefers-color-scheme: dark) {
         :root {
           --bg: #000000;
           --font-color: #e4e9ee;
-          --link-bg: rgb(245, 33, 33);
+          --link-bg: rgba(79, 192, 141);
           --text-shadow: #aaaaaa 1px 0px 5px;
         }
       }
@@ -38,7 +44,7 @@
         :root {
           --bg: #ffffff;
           --font-color: #121314;
-          --link-bg: rgb(245, 33, 33);
+          --link-bg: rgba(79, 192, 141);
           --text-shadow: #333333 1px 0px 5px;
         }
       }
@@ -104,12 +110,15 @@
         background-color: var(--link-bg);
         transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
       }
-      a:hover:after {
-        top: 0%;
-      }
       .description {
         font-weight: 500;
         font-size: 2.2em;
+      }
+
+      @media screen and (min-width: 1280px) {
+        a:hover:after {
+          top: 0%;
+        }
       }
     </style>
     <script type="module" src="./assets/js/RaindropFX.js"></script>
@@ -142,6 +151,6 @@
       technologies and anime.
     </p>
     <p>If you happen to speak Chinese, my Chinese name is 姚志祥 (yáo zhì xiáng).</p>
-    <p>Outside of programming and watch anime and read novels, I enjoy MOBA games(Dota2).</p>
+    <p>Besides programming, I also like watching anime(Japanese anime) and novels(Chinese Wuxia novels) and working out.</p>
   </body>
 </html>
