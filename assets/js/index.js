@@ -1,14 +1,8 @@
-/**
- * @author SardineFish
- * https://github.com/SardineFish/raindrop-fx
- */
-
-const self = globalThis || window
 const canvas = document.querySelector('#canvas')
 const body = document.body.getBoundingClientRect()
 const rect = canvas.getBoundingClientRect()
 const generatorRandom = num => Math.floor(Math.random() * num)
-const { RaindropFX } = self
+
 const { height, width } = body
 
 const lightDesktopImgList = [
@@ -59,7 +53,7 @@ if (self.matchMedia && self.matchMedia('(prefers-color-scheme: dark)').matches) 
   option.background = light
 }
 
-const raindropFx = new RaindropFX(option)
+const raindropFx = new window.RaindropFX(option)
 
 self.onresize = () => {
   const rect = canvas.getBoundingClientRect()
