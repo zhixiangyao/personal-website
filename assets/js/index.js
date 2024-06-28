@@ -5,31 +5,22 @@ const generatorRandom = num => Math.floor(Math.random() * num)
 
 const { height, width } = body
 
-const lightDesktopImgList = ['/assets/images/desktop/1.png', '/assets/images/desktop/2.png']
-const darkDesktopImgList = [
-  '/assets/images/desktop/3.png',
-  '/assets/images/desktop/4.png',
-  '/assets/images/desktop/5.png',
-  '/assets/images/desktop/6.jpeg',
-  '/assets/images/desktop/7.jpeg',
-]
-const darkImgList = ['/assets/images/mobile/3.jpeg', '/assets/images/mobile/6.jpeg', '/assets/images/mobile/7.jpeg']
-const lightImgList = [
-  '/assets/images/mobile/2.jpeg',
-  '/assets/images/mobile/1.jpeg',
-  '/assets/images/mobile/4.jpeg',
-  '/assets/images/mobile/5.jpeg',
-]
+const desktopPrefix = '/assets/images/desktop/'
+const lightDesktopImgList = ['1.png', '2.png']
+const darkDesktopImgList = ['3.png', '4.png', '5.png', '6.jpeg', '7.jpeg']
+const prefix = '/assets/images/mobile/'
+const darkImgList = ['3.jpeg', '6.jpeg', '7.jpeg']
+const lightImgList = ['2.jpeg', '1.jpeg', '4.jpeg', '5.jpeg']
 
 let dark = undefined
 let light = undefined
 
 if (height > width) {
-  dark = darkImgList[generatorRandom(darkImgList.length)]
-  light = lightImgList[generatorRandom(lightImgList.length)]
+  dark = darkImgList[prefix + generatorRandom(darkImgList.length)]
+  light = lightImgList[prefix + generatorRandom(lightImgList.length)]
 } else {
-  dark = darkDesktopImgList[generatorRandom(darkDesktopImgList.length)]
-  light = lightDesktopImgList[generatorRandom(lightDesktopImgList.length)]
+  dark = darkDesktopImgList[desktopPrefix + generatorRandom(darkDesktopImgList.length)]
+  light = lightDesktopImgList[desktopPrefix + generatorRandom(lightDesktopImgList.length)]
 }
 
 canvas.width = rect.width
@@ -65,10 +56,3 @@ self.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', async
 })
 
 raindropFx.start()
-
-console.group('Inspired by Even You: https://evanyou.me')
-console.groupEnd()
-
-console.group('raindropFx author: SardineFish')
-console.group('GitHub: https://github.com/SardineFish/raindrop-fx')
-console.groupEnd()
