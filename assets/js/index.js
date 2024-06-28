@@ -40,6 +40,8 @@ if (self.matchMedia && self.matchMedia(query).matches) {
   option.background = light
 }
 
+console.log(option)
+
 const raindropFx = new window.RaindropFX(option)
 
 self.onresize = () => {
