@@ -1,14 +1,15 @@
 const canvas = document.querySelector('#canvas')
 const body = document.body.getBoundingClientRect()
 const rect = canvas.getBoundingClientRect()
-const generatorRandom = num => Math.floor(Math.random() * num)
+const genRandom = num => Math.floor(Math.random() * num)
 
 const { height, width } = body
 
-const desktopPrefix = '/assets/images/desktop/'
+const desktopPrefix = `${location.origin}/assets/images/desktop/`
+const prefix = `${location.origin}/assets/images/mobile/`
+
 const lightDesktopImgList = ['1.png', '2.png']
 const darkDesktopImgList = ['3.png', '4.png', '5.png', '6.jpeg', '7.jpeg']
-const prefix = '/assets/images/mobile/'
 const darkImgList = ['3.jpeg', '6.jpeg', '7.jpeg']
 const lightImgList = ['2.jpeg', '1.jpeg', '4.jpeg', '5.jpeg']
 
@@ -16,11 +17,11 @@ let dark = undefined
 let light = undefined
 
 if (height > width) {
-  dark = darkImgList[prefix + generatorRandom(darkImgList.length)]
-  light = lightImgList[prefix + generatorRandom(lightImgList.length)]
+  dark = darkImgList[prefix + genRandom(darkImgList.length)]
+  light = lightImgList[prefix + genRandom(lightImgList.length)]
 } else {
-  dark = darkDesktopImgList[desktopPrefix + generatorRandom(darkDesktopImgList.length)]
-  light = lightDesktopImgList[desktopPrefix + generatorRandom(lightDesktopImgList.length)]
+  dark = darkDesktopImgList[desktopPrefix + genRandom(darkDesktopImgList.length)]
+  light = lightDesktopImgList[desktopPrefix + genRandom(lightDesktopImgList.length)]
 }
 
 canvas.width = rect.width
@@ -31,7 +32,9 @@ const option = {
   background: light,
 }
 
-if (self.matchMedia && self.matchMedia('(prefers-color-scheme: dark)').matches) {
+const query = '(prefers-color-scheme: dark)'
+
+if (self.matchMedia && self.matchMedia(query).matches) {
   option.background = dark
 } else {
   option.background = light
@@ -44,7 +47,7 @@ self.onresize = () => {
   raindropFx.resize(rect.width, rect.height)
 }
 
-self.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', async e => {
+self.matchMedia(query).addEventListener('change', async e => {
   const newColorScheme = e.matches ? 'dark' : 'light'
   if (newColorScheme === 'dark') {
     await raindropFx.setBackground(dark)
