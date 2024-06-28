@@ -5,27 +5,20 @@ const generatorRandom = num => Math.floor(Math.random() * num)
 
 const { height, width } = body
 
-const lightDesktopImgList = [
-  'https://yaozhixiang.top/assets/images/desktop/1.png',
-  'https://yaozhixiang.top/assets/images/desktop/2.png',
-]
+const lightDesktopImgList = ['/assets/images/desktop/1.png', '/assets/images/desktop/2.png']
 const darkDesktopImgList = [
-  'https://yaozhixiang.top/assets/images/desktop/3.png',
-  'https://yaozhixiang.top/assets/images/desktop/4.png',
-  'https://yaozhixiang.top/assets/images/desktop/5.png',
-  'https://yaozhixiang.top/assets/images/desktop/6.jpeg',
-  'https://yaozhixiang.top/assets/images/desktop/7.jpeg',
+  '/assets/images/desktop/3.png',
+  '/assets/images/desktop/4.png',
+  '/assets/images/desktop/5.png',
+  '/assets/images/desktop/6.jpeg',
+  '/assets/images/desktop/7.jpeg',
 ]
-const darkImgList = [
-  'https://yaozhixiang.top/assets/images/mobile/3.jpeg',
-  'https://yaozhixiang.top/assets/images/mobile/6.jpeg',
-  'https://yaozhixiang.top/assets/images/mobile/7.jpeg',
-]
+const darkImgList = ['/assets/images/mobile/3.jpeg', '/assets/images/mobile/6.jpeg', '/assets/images/mobile/7.jpeg']
 const lightImgList = [
-  'https://yaozhixiang.top/assets/images/mobile/2.jpeg',
-  'https://yaozhixiang.top/assets/images/mobile/1.jpeg',
-  'https://yaozhixiang.top/assets/images/mobile/4.jpeg',
-  'https://yaozhixiang.top/assets/images/mobile/5.jpeg',
+  '/assets/images/mobile/2.jpeg',
+  '/assets/images/mobile/1.jpeg',
+  '/assets/images/mobile/4.jpeg',
+  '/assets/images/mobile/5.jpeg',
 ]
 
 let dark = undefined
