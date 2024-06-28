@@ -30,6 +30,7 @@
     <meta name="twitter:title" content="Zhixiang Yao" />
     <meta name="twitter:description" content="My name is Zhixiang Yao. I am a font-end developer." />
 
+    <link rel="stylesheet" href="./assets/css/404.css" />
     <link rel="stylesheet" href="./assets/css/font.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png" />
@@ -37,104 +38,6 @@
     <link rel="manifest" href="./assets/favicons/site.webmanifest" />
     <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#5bbad5" />
 
-    <style>
-      :root {
-        --bg: #ffffff;
-        --font-color: #121314;
-        --link-bg: rgba(79, 192, 141);
-        --text-shadow: #aaaaaa 1px 0px 5px;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #000000;
-          --font-color: #e4e9ee;
-          --link-bg: rgba(79, 192, 141);
-          --text-shadow: #aaaaaa 1px 0px 5px;
-        }
-      }
-      @media (prefers-color-scheme: light) {
-        :root {
-          --bg: #ffffff;
-          --font-color: #121314;
-          --link-bg: rgba(79, 192, 141);
-          --text-shadow: #333333 1px 0px 5px;
-        }
-      }
-      html {
-        width: 100%;
-        height: 100%;
-        font-size: calc(10px + 0.33vw);
-        font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-          'Open Sans', 'Helvetica Neue', sans-serif;
-        color: var(--font-color);
-        -webkit-font-smoothing: antialiased;
-      }
-      body {
-        position: fixed;
-        top: 0;
-        left: 0;
-        box-sizing: border-box;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        padding: 5vh 10vw;
-        background-color: var(--bg);
-        overflow: hidden;
-      }
-      h1 {
-        text-align: center;
-      }
-      .go-back {
-        position: relative;
-        top: 0;
-        left: 50%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        height: 40px;
-        width: auto;
-        min-width: 0.375rem;
-        padding: 0 16px;
-        padding-inline-start: 1rem;
-        padding-inline-end: 1rem;
-        border-color: #e2e8f0;
-        border-radius: 0.375rem;
-        border-image: initial;
-        color: #ffffff;
-        background: #3182ce;
-        line-height: 1.2;
-        font-size: 1rem;
-        font-weight: 600;
-        cursor: pointer;
-        user-select: none;
-        white-space: nowrap;
-        vertical-align: middle;
-        outline: transparent solid 2px;
-        outline-offset: 2px;
-        overflow: visible;
-        overflow-wrap: break-word;
-        text-transform: none;
-        text-indent: 0px;
-        text-shadow: none;
-        text-rendering: auto;
-        letter-spacing: normal;
-        word-spacing: normal;
-        transform: translateX(-50%);
-
-        appearance: none;
-        -webkit-box-align: center;
-        -webkit-box-pack: center;
-        transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-        transition-duration: 200ms;
-        border-width: 0px;
-        border-style: solid;
-      }
-      @media (any-hover: hover) {
-        .go-back:hover {
-          background: #2b6cb0;
-        }
-      }
-    </style>
     <!-- Global site tag (gtag.js) - Google Analytics start -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3NF1W0R64"></script>
     <script>
@@ -143,7 +46,6 @@
         dataLayer.push(arguments)
       }
       gtag('js', new Date())
-
       gtag('config', 'G-L3NF1W0R64')
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics end -->
@@ -154,10 +56,8 @@
     <h1>404 Not Found</h1>
     <button type="button" class="go-back">Go back!</button>
     <script>
-      const EleButton = document.querySelector('.go-back')
-      EleButton.addEventListener('click', () => {
-        history.go(-1)
-      })
+      const ele = document.querySelector('.go-back')
+      ele.addEventListener('click', () => history.go(-1))
     </script>
   </body>
 </html>

@@ -30,6 +30,7 @@
     <meta name="twitter:title" content="Zhixiang Yao" />
     <meta name="twitter:description" content="My name is Zhixiang Yao. I am a font-end developer." />
 
+    <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="stylesheet" href="./assets/css/font.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/favicon-32x32.png" />
@@ -37,101 +38,6 @@
     <link rel="manifest" href="./assets/favicons/site.webmanifest" />
     <link rel="mask-icon" href="./assets/favicons/safari-pinned-tab.svg" color="#5bbad5" />
 
-    <style>
-      :root {
-        --bg: #ffffff;
-        --font-color: #121314;
-        --link-bg: rgba(79, 192, 141);
-        --text-shadow: #aaaaaa 1px 0px 5px;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #000000;
-          --font-color: #e4e9ee;
-          --link-bg: rgba(79, 192, 141);
-          --text-shadow: #aaaaaa 1px 0px 5px;
-        }
-      }
-      @media (prefers-color-scheme: light) {
-        :root {
-          --bg: #ffffff;
-          --font-color: #121314;
-          --link-bg: rgba(79, 192, 141);
-          --text-shadow: #333333 1px 0px 5px;
-        }
-      }
-      html {
-        width: 100%;
-        height: 100%;
-        font-size: calc(10px + 0.33vw);
-        font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-          'Open Sans', 'Helvetica Neue', sans-serif;
-        color: var(--font-color);
-        -webkit-font-smoothing: antialiased;
-      }
-      body {
-        position: fixed;
-        top: 0;
-        left: 0;
-        box-sizing: border-box;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        padding: 5vh 10vw;
-        background-color: var(--bg);
-        overflow: hidden;
-      }
-      #canvas {
-        z-index: -1;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-      }
-      h1 {
-        margin-bottom: 0;
-        font-size: 4.5em;
-        font-weight: 500;
-        text-shadow: var(--text-shadow);
-      }
-      p {
-        max-width: 28em;
-        font-size: 1.6em;
-        font-weight: 300;
-        line-height: 1.4;
-        text-shadow: var(--text-shadow);
-      }
-      a {
-        font-weight: 400;
-        position: relative;
-        color: var(--font-color);
-        text-decoration: none;
-        text-shadow: var(--text-shadow);
-      }
-      a:after {
-        content: '';
-        position: absolute;
-        z-index: -1;
-        top: 70%;
-        left: -0.1em;
-        right: -0.1em;
-        bottom: 0;
-        background-color: var(--link-bg);
-        transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-      }
-      .description {
-        font-weight: 500;
-        font-size: 2.2em;
-      }
-      @media (any-hover: hover) {
-        a:hover:after {
-          top: 0%;
-        }
-      }
-    </style>
     <script src="./assets/js/RaindropFX.js" defer></script>
     <script src="./assets/js/index.js?t=4" defer></script>
     <!-- Global site tag (gtag.js) - Google Analytics start -->
@@ -142,7 +48,6 @@
         dataLayer.push(arguments)
       }
       gtag('js', new Date())
-
       gtag('config', 'G-L3NF1W0R64')
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics end -->
