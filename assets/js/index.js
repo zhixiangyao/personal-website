@@ -13,7 +13,7 @@ const darksPC = ['3.png', '4.png', '5.png', '6.jpeg', '7.jpeg']
 const darks = ['3.jpeg', '6.jpeg', '7.jpeg']
 const lights = ['2.jpeg', '1.jpeg', '4.jpeg', '5.jpeg']
 
-let dark = prefixPC + darksPD[genRandom(darksPD.length)]
+let dark = prefixPC + darksPC[genRandom(darksPC.length)]
 let light = prefixPC + lightsPC[genRandom(lightsPC.length)]
 
 const { height, width } = document.body.getBoundingClientRect()
