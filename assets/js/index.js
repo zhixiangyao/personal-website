@@ -1,9 +1,6 @@
 'use strict'
 
-/**
- *
- * @param {HTMLCanvasElement} canvas
- */
+/** @param {HTMLCanvasElement} canvas */
 const init = canvas => {
   const rect = canvas.getBoundingClientRect()
   const genRandom = num => Math.floor(Math.random() * num)
